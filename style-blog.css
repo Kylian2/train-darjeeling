@@ -1,0 +1,466 @@
+/* CSS HEX 
+--dark-khaki: #b5ba72ff;
+--grullo: #99907dff;
+--old-lavender: #7d6f86ff;
+--purple-navy: #585191ff;
+--dark-slate-blue: #4f359bff;
+*/
+
+/* CSS HSL 
+--dark-khaki: hsla(64, 34%, 59%, 1);
+--grullo: hsla(41, 12%, 55%, 1);
+--old-lavender: hsla(277, 9%, 48%, 1);
+--purple-navy: hsla(247, 28%, 44%, 1);
+--dark-slate-blue: hsla(255, 49%, 41%, 1);
+*/
+
+/* SCSS HEX 
+$dark-khaki: #b5ba72ff;
+$grullo: #99907dff;
+$old-lavender: #7d6f86ff;
+$purple-navy: #585191ff;
+$dark-slate-blue: #4f359bff;
+*/
+
+/* SCSS HSL 
+$dark-khaki: hsla(64, 34%, 59%, 1);
+$grullo: hsla(41, 12%, 55%, 1);
+$old-lavender: hsla(277, 9%, 48%, 1);
+$purple-navy: hsla(247, 28%, 44%, 1);
+$dark-slate-blue: hsla(255, 49%, 41%, 1);
+*/
+
+/* SCSS RGB 
+$dark-khaki: rgba(181, 186, 114, 1);
+$grullo: rgba(153, 144, 125, 1);
+$old-lavender: rgba(125, 111, 134, 1);
+$purple-navy: rgba(88, 81, 145, 1);
+$dark-slate-blue: rgba(79, 53, 155, 1);
+*/
+
+/* SCSS Gradient 
+$gradient-top: linear-gradient(0deg, #b5ba72ff, #99907dff, #7d6f86ff, #585191ff, #4f359bff);
+$gradient-right: linear-gradient(90deg, #b5ba72ff, #99907dff, #7d6f86ff, #585191ff, #4f359bff);
+$gradient-bottom: linear-gradient(180deg, #b5ba72ff, #99907dff, #7d6f86ff, #585191ff, #4f359bff);
+$gradient-left: linear-gradient(270deg, #b5ba72ff, #99907dff, #7d6f86ff, #585191ff, #4f359bff);
+$gradient-top-right: linear-gradient(45deg, #b5ba72ff, #99907dff, #7d6f86ff, #585191ff, #4f359bff);
+$gradient-bottom-right: linear-gradient(135deg, #b5ba72ff, #99907dff, #7d6f86ff, #585191ff, #4f359bff);
+$gradient-top-left: linear-gradient(225deg, #b5ba72ff, #99907dff, #7d6f86ff, #585191ff, #4f359bff);
+$gradient-bottom-left: linear-gradient(315deg, #b5ba72ff, #99907dff, #7d6f86ff, #585191ff, #4f359bff);
+$gradient-radial: radial-gradient(#b5ba72ff, #99907dff, #7d6f86ff, #585191ff, #4f359bff);
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+/*	
+	font-family: 'Noto Serif', serif;
+	font-family: 'Ubuntu', sans-serif;
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: #545E75;
+	display: flex;
+}
+
+/* style header */
+
+#main-header{
+	position: fixed;
+	bottom: 0;
+	background: #304D6D;
+	height: 100%;
+	min-width: 75px;
+	font-family: 'Ubuntu', sans-serif;
+
+}
+
+#navigation-menu{
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
+}
+
+.option-navigation{
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	text-transform: uppercase;
+	list-style-type: none;
+	margin: 20px 0 20px 0;
+	padding: 5px;
+	border: 2px solid #304D6D;
+}
+
+.option-navigation a{
+	color: #82A0BC;
+	text-decoration: none;
+}
+
+.option-navigation:hover{
+	transition: .4s;
+	border: 2px solid #82A0BC;
+}
+
+.option-navigation:active{
+	transition: .4s;
+	border: 2px solid #82A0BC;
+	background: #82A0BC;
+	color: #304D6D;;
+}
+
+.option-navigation:active a{
+	transition: .4s;
+	color: #304D6D;;
+}
+#social-media{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	bottom: 20px;
+	left: 15%;
+}
+
+.social-media-logo{
+	width: 40px;
+	margin: 5px;
+}
+
+.social-media-logo:hover{
+     animation: vibration 1s;
+     animation-iteration-count: infinite;
+}
+@keyframes vibration{
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-2px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 3px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(2px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(2px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* logo */
+
+#main{
+	width: 100%;
+}
+
+#logo-container{
+	width: 500px;
+	margin: auto;
+	margin-top: -100px;
+}
+
+#logo{
+	border: 2ps solid red;
+	margin-left: 5%;
+	width: 500px;
+	height: 500px;
+	padding: 2px;
+}
+
+#article-overview-container{
+	display: grid;
+	grid-template-columns: 375px 375px; 
+    grid-template-rows: 250px 350px; 
+    grid-gap: 20px; 
+    grid-template-areas: 
+      ". ."
+      ". ."; 
+    justify-content: center;
+    margin-left: 4%;
+    margin-bottom: 200px;
+}
+
+
+#article-1{
+	background: url(image/13_07-darjeeling-2.png) no-repeat;
+	background-size: 110%;
+	background-position: center;
+	grid-column: 1;
+	grid-row: 1/3;
+	filter: grayscale(70%);
+}
+
+#article-2{
+	background: url(image/article-chasse.jpeg) no-repeat;
+	background-size: 160%;
+	background-position: center;
+	grid-column: 2;
+	grid-row: 1;
+	filter: grayscale(70%);
+}
+
+#article-3{
+	background: url(image/cantine.jpeg) no-repeat;
+	background-size: 100%;
+	background-position: center;
+	grid-column: 2;
+	grid-row: 2;
+	filter: grayscale(70%);
+}
+
+#article-1:hover{
+	background-size: 115%;
+	transition: .4s;
+}
+
+#article-2:hover{
+	background-size: 165%;
+	transition: .4s;
+}
+
+#article-3:hover{
+	background-size: 105%;
+	transition: .4s;
+}
+.content{
+	background-color: hsla(0, 0%, 0%, .4);
+	width: 100%;
+	height: 100%;
+	padding-top: 5%;
+
+}
+
+.content:hover #text{
+	transition: .4s;
+	width: 90%;
+}
+
+.content #text{
+	border: 1px solid hsla(0, 0%, 100%, .6);
+	width: 85%;
+	height: 95%;
+	margin: auto;
+
+}
+
+.article-overview{
+	top: 225px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#text a{
+	display: block;
+	position: relative;
+	top: 230px;
+	left: 25px;
+	width: 125px;
+	height: 40px;
+	border: 1px solid hsla(0, 0%, 100%, .6);
+	color: white;
+	text-align: center;
+	padding-top: 9px;
+	text-decoration: none;
+}
+
+#text a:hover{
+	transition: .4s;
+	background: hsla(0, 0%, 100%, .6);
+	color: hsla(0, 0%, 0%, 1);
+	border: 1px solid hsla(0, 0%, 0%, 1);
+
+}
+
+#text a:active{
+	transition: .4s;
+	background: #304D6D;
+}
+
+#text h1{
+	position: relative;
+	width: 275px;
+	left: 25px;
+	top: 175px;
+	color: white;
+	font-family: 'Noto Serif', serif;
+	font-size: 28px;
+}
+
+#article-1 p{
+	position: relative;
+	left: 25px;
+	top: 190px;
+}
+
+.paragraph{
+	width: 275px;
+	color: hsla(0, 0%, 100%, .8);
+}
+
+#article-2 h1{
+	top: 40px;
+	left: 25px;
+}
+
+#article-2 p{
+	position: relative;
+	top: 50px;
+	left: 25px;
+}
+
+#article-3 h1{
+	top: 40px;
+	left: 25px;
+}
+
+#article-3 p{
+	position: relative;
+	top: 60px;
+	left: 20px;
+}
+
+
+/* article style */
+
+#article-header{
+	position: fixed;
+	right: 75px;
+	top: 55px;
+	background: #304D6D;
+	width: 80px;
+	height: 80px;
+	border-radius: 50px;
+	border: 2px solid #304D6D;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+} 
+
+#article-header:hover{
+	border-color: #82A0BC;
+	transition: .4s;
+}
+
+#article-header img{
+	width: 60px;
+}
+
+#article-content{
+	width: 800px;
+	margin-left: 15%;
+	margin-top: 140px;
+	margin-bottom: 100px;
+}
+
+#article-content h1{
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#article-content h2{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 13px;
+	font-weight: 300;
+	text-align: right;
+	margin-bottom: 20px;
+}
+
+#article-content img{
+	width: 76%;
+	margin-top: 50px;
+	margin-left: 12%;
+	margin-bottom: 50px;
+}
+
+#image-1{
+	filter: grayscale(100%);
+}
+
+#article-content p{
+	line-height: 30px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 17px;
+	margin-bottom: 50px;
+}
+
+#article-content em{
+	font-size: 17px;
+}
+
+#article-content span{
+	padding-left: 40px;
+}
+
+#article-content #image-3{
+	float: left;
+	width: 250px;
+	margin-left: 0px;
+	margin-right: 40px;
+}
+
+@media (max-width: 980px) {
+
+	body{
+		flex-direction: column;
+	}
+
+	#main-header{
+		position: unset;
+		height: 75px;
+	  width: 100%;	
+	}
+
+	#navigation-menu{
+		flex-direction: row;
+		margin-top: 0;
+	}
+
+	#social-media{
+		display: none;
+	}
+
+	#logo{
+		width: 250px;
+		height: 250px;
+		margin-left: 27%;
+		margin-top: 100px;
+	}
+
+	.option-navigation{
+		writing-mode: unset;
+		text-orientation: unset;
+		display: inline-flex;
+		flex-direction: row;
+	}
+
+	#article-overview-container{
+		grid-template-columns: 375px ; 
+    grid-template-rows: 250px 350px 250px 350px; 
+	}
+
+	#article-1{
+		grid-column: 1;
+		grid-row: 1/3;
+	}
+
+	#article-2{
+		grid-column: 1;
+		grid-row: 3;
+	} 
+	#article-3{
+		grid-column: 1;
+		grid-row: 4;
+	}
+
+	#article-content{
+		width: 450px;
+		margin-left: 25%;
+	}
+
+}
+
+
+
+
+
